@@ -6,7 +6,7 @@ import { Skills } from './components/Skills'
 import { Projects } from './components/Projects'
 import { ContactForm } from './components/Contact'
 import { Footer } from './components/Footer';
-import '../node_modules/bootstrap/dist/css/bootstrap.min.css'
+import './bootstrap.min.css'
 
 function App() {
   useEffect(() =>{
