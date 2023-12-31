@@ -4,7 +4,6 @@ import contactImg from "../assets/img/contact-img1.png"
 
 
 export const ContactForm = () =>{
-
     return(
         <section className="contact" id="connect">
             <Container>
@@ -14,22 +13,22 @@ export const ContactForm = () =>{
                     </Col>
                     <Col lg={6}>
                         <h2>Get In Touch</h2>
-                        <form>
+                        <form name="contact" method="POST" data-netlify="true">
                             <Row>
                                 <Col sm={6} className="px-1">
-                                    <input type="text" placeholder="First Name" />
+                                    <input type="text" name="firstname" placeholder="First Name" />
                                 </Col>
                                 <Col sm={6} className="px-1">
-                                    <input type="text" placeholder="Last Name"  />
+                                    <input type="text" name="lastname" placeholder="Last Name"  />
                                 </Col>
                                 <Col sm={6} className="px-1">
-                                    <input type="email" placeholder="Email Adress" />
+                                    <input type="email" name="email" placeholder="Email Adress" />
                                 </Col>
                                 <Col sm={6} className="px-1">
-                                    <input type="tel" placeholder="Phone Number" />
+                                    <input type="tel" name="phone" placeholder="Phone Number" />
                                 </Col>
                                 <Col>
-                                <textarea row="6" placeholder="Message" ></textarea>
+                                <textarea row="6" placeholder="Message" name="message"></textarea>
                                 <button type="submit"><span>Submit</span></button>
                                 </Col>
                             </Row>
