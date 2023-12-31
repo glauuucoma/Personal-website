@@ -14,7 +14,7 @@ export const ContactForm = () =>{
                     </Col>
                     <Col lg={6}>
                         <h2>Get In Touch</h2>
-                        <form name="contact" action="/success.html" method="post">
+                        <form name="contact" action="/Success.html" method="post">
                             <Row>
                                 <input type="hidden" name="form-name" value="contact"/>
                                 <Col sm={6} className="px-1">
