@@ -2,6 +2,7 @@ import { Container, Row, Col, Tab, Nav } from "react-bootstrap";
 import { ProjectCard } from "./ProjectCard";
 import projFront1 from "../assets/img/projects_1.png";
 import projFront2 from "../assets/img/projects_2.png";
+import projFront3 from "../assets/img/projects_8.png";
 import projIOS1 from "../assets/img/projects_3.png";
 import projIOS2 from "../assets/img/projects_4.png";
 import projPython1 from "../assets/img/projects_5.png";
@@ -13,16 +14,23 @@ export const Projects = () => {
 
   const projectsFront = [
     {
+      title: "Netflix Clone",
+      description:
+        "Full Stack Netflix Clone project, showcasing the use of React, Next.js, Tailwind CSS, Prisma, MongoDB, and NextAuth",
+      imgUrl: projFront3,
+      url: "https://github.com/glauuucoma/Personal-website",
+    },
+    {
       title: "Product website",
       description:
-        "Multi-page website featuring courses, a form page, and other relevant content. I practiced building complex HTML and CSS layouts while incorporating JavaScript functionalities.",
+        "Multi-page website featuring courses, a form page, and other relevant content. I practiced building complex HTML and CSS layouts while incorporating JavaScript functionalities",
       imgUrl: projFront2,
       url: "https://github.com/glauuucoma/WEB-ProductWebsite",
     },
     {
       title: "Personal website",
       description:
-        "Welcome to my portfolio, a dynamic display of my work as a Computer Science student and Software Engineer Intern, meticulously crafted using React, Bootstrap, and the animate.css library.",
+        "Welcome to my portfolio, a dynamic display of my work as a Computer Science student and Software Engineer Intern, meticulously crafted using React, Bootstrap, and the animate.css library",
       imgUrl: projFront1,
       url: "https://github.com/glauuucoma/Personal-website",
     },
@@ -34,14 +42,14 @@ export const Projects = () => {
     {
       title: "Home screen prototype",
       description:
-        "This project is my exploration of mobile interface design. After a couple of weeks of SwiftUI tutorials I decided to experiment with the Mobile interface. The home screen features an embedded YouTube video, a sleek carousel for content display, and a side menu.",
+        "This project is my exploration of mobile interface design, I decided to experiment with the Mobile interface. The home screen features an embedded YouTube video, a sleek carousel for content display, and a side menu",
       imgUrl: projIOS1,
       url: "https://github.com/glauuucoma/Home-Screen-Prototype",
     },
     {
       title: "Coffee Ordering App",
       description:
-        "Coffee ordering app created with Swift, SwiftUI, WebKit, and developed using Xcode. The app allows users to easily order their favorite coffee beverages, providing a seamless and intuitive user experience for coffee enthusiasts.",
+        "Coffee ordering app created with Swift, SwiftUI, WebKit, and developed using Xcode. The app allows users to easily order their favorite coffee beverages",
       imgUrl: projIOS2,
       url: "https://github.com/glauuucoma/Coffee-Ordering-App",
     },
@@ -53,21 +61,21 @@ export const Projects = () => {
     {
       title: "Sort Visualizer",
       description:
-        "Sort Visualizer, written in Python with Pygame, visually demonstrates the merge sort and bubble sort algorithms, offering a clear and engaging way to understand how sorting algorithms organize data.",
+        "Sort Visualizer, written in Python with Pygame, visually demonstrates the merge sort and bubble sort algorithms, offering a clear and engaging way to understand how sorting algorithms organize data",
       imgUrl: projPython1,
       url: "https://github.com/glauuucoma/Sort-Visualizer",
     },
     {
       title: "Stock Market Predictor",
       description:
-        "(Machine Learning project) Developed in Jupyter Notebook, employs machine learning to predict S&P500 stock price movements. With a precision score of 57%, the model aids in identifying favorable market conditions for informed investment decisions. Explore this tool for practical insights into potential stock price trends, backed by data-driven predictions.",
+        "Developed in Jupyter Notebook, employs machine learning to predict S&P500 stock price movements. The model aids in identifying favorable market conditions for informed investment decisions",
       imgUrl: projPython2,
       url: "https://github.com/glauuucoma/ML-Market-Prediction",
     },
     {
       title: "Meeting Scheduler (In Development)",
       description:
-        "Console app that follows OOP principles, designed to simplify the coordination of meeting schedules. In this beta phase, two users can use the app to discover overlapping available time slots for their meetings. I plan to develop a web version of the app with a user-friendly interface, running on a server, so two people can simply exchange links and start using the project.",
+        "Console app that follows OOP principles, designed to simplify the coordination of meeting schedules. In this beta phase, two users can use the app to discover overlapping available time slots for their meetings",
       imgUrl: projPython3,
       url: "https://github.com/glauuucoma/TimeRange",
     },
@@ -95,10 +103,10 @@ export const Projects = () => {
                   <Nav.Link eventKey="first">Front-End</Nav.Link>
                 </Nav.Item>
                 <Nav.Item>
-                  <Nav.Link eventKey="second">iOS Development</Nav.Link>
+                  <Nav.Link eventKey="second">Python</Nav.Link>
                 </Nav.Item>
                 <Nav.Item>
-                  <Nav.Link eventKey="third">Python</Nav.Link>
+                  <Nav.Link eventKey="third">iOS Development</Nav.Link>
                 </Nav.Item>
               </Nav>
               <Tab.Content>
@@ -111,7 +119,7 @@ export const Projects = () => {
                 </Tab.Pane>
                 <Tab.Pane eventKey="second">
                   <Row>
-                    {projectsIOS.map((project, index) => {
+                    {projectsPython.map((project, index) => {
                       return (
                         <ProjectCard
                           key={index}
@@ -126,7 +134,7 @@ export const Projects = () => {
                 </Tab.Pane>
                 <Tab.Pane eventKey="third">
                   <Row>
-                    {projectsPython.map((project, index) => {
+                    {projectsIOS.map((project, index) => {
                       return (
                         <ProjectCard
                           key={index}
