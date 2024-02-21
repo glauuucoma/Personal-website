@@ -18,7 +18,7 @@ export const Projects = () => {
       description:
         "Full Stack Netflix Clone project, showcasing the use of React, Next.js, Tailwind CSS, Prisma, MongoDB, and NextAuth",
       imgUrl: projFront3,
-      url: "https://github.com/glauuucoma/Personal-website",
+      url: "https://github.com/glauuucoma/Netflix-Clone",
     },
     {
       title: "Product website",
